@@ -1,0 +1,75 @@
+<doctype html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <link rel="stylesheet" type="text/css" href="index 1.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Feedback ... Stay in touch</h1>
+            <form action="mailto:collin.chiong@ontariotechu.net?subject=Feedback on website"
+            method="post" enctype="text/plain" name="Feedback_form">
+                <p>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="Fname" size="32" placeholder="ex.Adam" required>
+                </p>
+                <p>
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="Lname" size="32" placeholder="ex.Sandler" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" id="Email" size="40" placeholder="ex.adam.sandler@gmail.com" required>
+                </p>
+                <p>
+                    <label for="comments">Comments:</label><br>
+                    <textarea name="Comments" cols="60" rows="6"></textarea>
+                </p>
+            <p>
+                <input type="checkbox" name="mailist">
+                <label for="mailist">Put me on your e-list</label>
+            </p>
+            <p>
+                <label>How did you find us?</label>
+                <select name="where">
+                    <option value="Search engine">Search Engine</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Word of mouth">Word of mouth</option>
+                    <option value="Other">Other</option>
+                    </select>
+            </p>
+            <p>
+                <label for="countries">Where do you live</label>
+                <input list="countries">
+                <datalist id="countries">
+                    <option value="Afghanistan">
+                    <option value="Albania">
+                    <option value="Algeria">
+                    <option value="Andorra">
+                    <option value="Angola">
+                    <option value="Antigua and Barbuda">
+                    <option value="Argentina">
+                    <option value="Armenia">
+                    <option value="Aruba">
+                    <option value="Australia">
+                    <option value="Austria">
+                    <option value="Azerbaijan">
+                </datalist>
+            </p>
+            <p>
+                <label>Did you like our webpage</label>
+                <input type="radio" name="radio" value="Yes">
+                <label for="radio">Yes</label>
+                <input type="radio" name="radio" value="No">
+                <label for="radio">No</label>
+            </p>
+            <p>
+                <label for="DoB">What's your birthday</label>
+                <input type="date" name="DoB">
+            </p>
+            <input type="reset" value="Reset"/>
+            <input type="submit" value="Submit"/>
+            </form>
+    </body>
+</html>
+</doctype>

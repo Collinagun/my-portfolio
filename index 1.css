@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS */
+
+#wrapper
+{
+    width: 960px;
+    height: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: azure;
+}
+
+#right-column
+{
+    float:right;
+    width:600px;
+    height:600px;
+    background-color: aliceblue;
+
+}
+#left-column
+{
+    float:left;
+    width:360px;
+    height:600px;
+    background-color: beige;
+}
+
+body{
+     /*background-color: black;*/
+     background: yellow;
+     background: linear-gradient(to bottom, red 0%,yellow 100%);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding: 0px;
+     margin: 0px;
+}
+
+video{
+    margin: 15px;
+}
+
+button{
+    margin: 15px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    border: 2px, white solid;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: beige;
+    color:black;
+    height: 40px;
+    border: 2px white solid;
+    box-shadow: -10px -10px 5px black;
+    border-radius: 5px;
+}
+
+h1,h2,h3,h4,h5,h6,p,li
+{
+    margin-left: 5px;
+}
+#banner h1
+{
+    color: aqua;
+}
+#footer
+{
+    height: 100px;
+}
+#banner
+{
+    background-color: blanchedalmond;
+    height: 120px;
+}
+.box
+{
+    height:150px;
+    width:150px;
+    float:left;
+    /*background-color: tan;*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+    background: radial-gradient(ellipse at center, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin: 15px;
+    border-radius: 75px;
+    opacity: .5;
+}
+.clear
+{
+    clear: both;
+}
+.box:hover
+{
+    background-color: white;
+    opacity: 1;
+}
