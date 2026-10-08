@@ -1,16 +1,42 @@
+@charset "UTF-8";
 /* Cascading Style Sheet*/
 /* CSS-3 */
 /* color combinations
  #D99437, #23B7D9, #1FA65A, #F2E2CE, #8176D7 */
-@charset "UTF-8";
+
+ body{
+    font-family:JetBrains Mono, "Roboto", sans-serif;
+    background-color: #d8c999;
+    color:#101010;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper
+{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fefffc;
+}
+
+header,footer
+{
+    background-color: #bb76d7;
+    color: #dfcab2;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
 
 video
 {
-    margin: 15px;
-    padding: 15px;
-    background-color: #000000;
-    border: 2px white solid;
-    box-shadow: 10px 10px 5px black;
+    margin: 15px 0;
+    padding: 8px;
+    background-color: #222222;
+    border: 2px solid #23B7D9;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+    max-width: 100%;                    /* prevents overflow on narrow viewports */
 }
 
 button
@@ -37,29 +63,55 @@ button:hover
     border-radius: 5px;
 }
 
-#wrapper
+#banner
 {
-    width: 960px;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:#D99437;
+    height:120px;
+    background-color: linear-gradient(to bottom,#903ebf 0%, #d6bfa3 100%);
 }
 
-header,footer
-{
-    background-color: white;
-    color: red;
-    padding-top: 5px;
-    padding-bottom: 5px;
+#banner h1{
+    margin: 0px;
+    color: #F2E2CE;
 }
+
+#banner .subtitle{
+    margin: 5px 0 0;
+    color: #F2E2CE;
+    font-style: italic;
+}
+
+#page-nav {
+    background-color: #e29c40;
+    overflow: hidden;                   /* clears the floated <li>s */
+}
+#page-nav ul {
+    list-style: none;                   /* remove bullets */
+    margin: 0;
+    padding: 0;
+}
+#page-nav li {
+    float: left;                        /* side-by-side (Week 3 float technique) */
+}
+#page-nav a {
+    display: block;                     /* whole <li> becomes clickable */
+    padding: 12px 24px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;   /* smooth hover */
+}
+#page-nav a:hover, #page-nav a.active
+{
+    background-color: #7f85d5;
+    color: #F2E2CE;
+}
+
 aside
 {
-    background-color: beige;
+    background-color: #F2E2CE;
     float: right;
     width: 300px;
-    margin: 5px;
-    padding: 5px;
+    margin: 0 0 15px 20px;
+    padding: 10px 15px;
 }
 figure
 {
@@ -68,60 +120,44 @@ figure
     height: 200px;
     background-color: aliceblue;
     margin: 5px;
-    padding: 5px;
-    border: 1px solid black;
+    padding: 8px;
+    border: 1px solid #1d1d1d;
 }
-img
+figure img
 {
-    width: 220px;
+    width: 100%;
+    display: block;
 }
 figcaption
 {
-    position: bottom;
-    background-color: #000000;
-    color: aliceblue;
+    background-color: #7067ba;          /* deep accent instead of pure black */
+    color: #F2E2CE;
+    padding: 6px 8px;
+    text-align: center;
 }
-#right-column
-{
-    width: 600px;
-    height: 600px;
-    float:right;
-    background-color: antiquewhite;
-}
-#left-column
-{
-    width: 360px;
-    height: 600px;
-    float:left;
-    background-color: silver;
-}
+
 h1,h2,h3,h4,h5,h6,p,li {
     margin: 15px;
     color: #1FA65A;
 }
-#footer
-{
-    height: 80px;
+
+/* Angled (45°) linear gradient — required by rubric section 2b.
+   Used on Project.html's "Project" Buttons. */
+.angled-demo {
+    padding: 30px 20px;
+    margin: 20px 0;
+    color: #F2E2CE;
+    background: linear-gradient(45deg, #D99437 0%, #8176D7 100%); /* angled */
+    border-radius: 8px;
 }
-.clear
-{
-    clear: both;
+
+.project {
+    margin-bottom: 20px;
+    padding: 12px 18px;
+    background-color: #F2E2CE;
+    border-left: 5px solid #1FA65A;
 }
-#banner
-{
-    height:120px;
-    background-color: grey;
-}
-#banner h1{
-    padding-top: 15px;
-    color: #1FA65A;
-}
-body{
-    font-family:JetBrains Mono;
-    padding: 0px;
-    margin: 0px;
-    background: linear-gradient(to bottom, red 0%,yellow 100%);
-}
+
 .box
 {
     height: 150px;

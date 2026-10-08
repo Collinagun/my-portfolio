@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index 1.css" rel="stylesheet" type="text/css">
-    <title>Semantic Tags</title>
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-            <h1>Header content goes here</h1>
-            <nav>
-                <h4>
-                    <a href="Lecture 1 (index).html">Home Page</a> |
-                    <a href="Lecture 2 (Videos).html">Video Page</a> |
-                    <a href="Lecture 3 (Semantic).html">Semantic Page</a>
-                </h4>
-            </nav>
-        </header>
-        <article>
-            <aside>
-                <p>this is <mark>my side note </mark>mark about my article</p>
-            </aside>
-            <h3>Machine Learning</h3>
-            <p>This article is based on Machine Learning</p>
-            <p>We will cover supervised Machine Learning</p>
-            <section>
-                <h3>First Section of the Article</h3>
-                <p>Content of first section</p>
-            </section>
-            <section>
-                <h3>Second Section of the Article</h3>
-                <p>Content of second section</p>
-                <figure>
-                    <img src="Videos (lecture 2)/on_record.png">
-                    <figcaption>
-                        <h5>Figure caption goes here</h5>
-                    </figcaption>
-                </figure>
-            </section>
-        </article>
-        <footer>
-            <h5>Footer content</h5>
-            <nav>
-                <h4>
-                    <a href="Lecture 1 (index).html">Home Page</a> |
-                    <a href="Lecture 2 (Videos).html">Video Page</a> |
-                    <a href="Lecture 3 (Semantic).html">Semantic Page</a>
-                </h4>
-            </nav>
-            <address>
-                <p>
-                    Contact us at <a href="mailto:collin.chiong@ontariotechu.net">
-                        collin.chiong@ontariotechu.net</a>
-                </p>
-            </address>
-        </footer>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Home Page</title>
+        
+        <!--style sheet is for full-size monitor-->
+        <link href="full 3.css" rel="stylesheet" type="text/css" 
+        media="only screen and (min-width:960px)">
+        <!--style sheet is for tablet-->
+        <link href="tablet 3.css" rel="stylesheet" type="text/css"
+        media="only screen and (min-width:481px) and (max-width:959px)">
+        <!--style sheet is for smart phone-->
+        <link href="smartphone 3.css" rel="stylesheet" type="text/css"
+        media="only screen and (max-width:480px)">
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <header id="banner">
+                <h1>Collin Chiong</h1>
+                <p class="subtitle">Student of FBIT Faculty - Web Developer</p>
+                <nav id="page-nav">
+                    <ul>
+                        <li><a href="Lecture 3 (Semantic).html">Home Page</a></li>
+                        <li><a href="Lecture 2 (Videos).html">About Me</a></li>
+                        <li><a href="Lecture 1 (index).html">Projects</a></li>
+                        <li><a href="Lecture 2 (feedback).html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <article>
+                    
+                    <h2>Welcome to my Portfolio!</h2>
+                    <p>
+                        I am a student in the FBIT Faculty at Ontario Tech University.
+                        This site will provide you with an introduction to myself, my previous projects, and a way to contact me.
+                    </p>
+                    <!-- Use this part for the picture in about me section
+                    <section>
+                        <figure>
+                            <img src="Videos (lecture 2)/on_record.png">
+                            <figcaption>
+                                <h5>Figure caption goes here</h5>
+                            </figcaption>
+                        </figure>
+                    </section>
+                    -->
+                </article>
+
+                    <aside>
+                        <p>Use the navigation above to explore each page.</p>
+                    </aside>
+            </main>
+
+            <footer id="contact">
+                <p>© 2026 by Collin Chiong (<a href="mailto:collin.chiong@ontariotechu.net">collin.chiong@ontariotechu.net</a>)</p>
+            </footer>
+        </div>
+    </body>
 </html>
