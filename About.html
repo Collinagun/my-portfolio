@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>About Me</title>
+        
         <!--style sheet is for full-size monitor-->
         <link href="desktop.css" rel="stylesheet" type="text/css" 
         media="only screen and (min-width:960px)">
@@ -22,28 +26,57 @@
                 <nav id="page-nav">
                     <ul>
                         <li><a href="Home.html">Home Page</a></li>
-                        <li><a href="About.html">About Me</a></li>
+                        <li><a href="About.html" class="active">About Me</a></li>
                         <li><a href="Projects.html">Projects</a></li>
                         <li><a href="Contact.html">Contact Me</a></li>
                     </ul>
                 </nav>
             </header>
 
-            <video 
-            id="video"
-            controls
-            width="320"
-            height="240" 
-            poster="C:\Users\colli\Web development class\Videos (lecture 2)\on_record.png"
-            preload="auto">
-                <source src="C:\Users\colli\Web development class\Videos (lecture 2)\on_record.mp4" type="video/mp4">
-                <source src="C:\Users\colli\Web development class\Videos (lecture 2)\on_record.ogv" type="video/ogg">
-            </video>
-            <br>
-            <button onclick="playpause()">Play or Pause the video</button>
+            <main>
+                <article>
+                    <h2>Hi, I'm Collin Chiong.</h2>
+
+                    <!-- Profile photo — styled by figure.profile in desktop.css -->
+                    <figure class="profile">
+                        <img src="media/Profile_picture.jpg" alt="Profile Photograph of Collin Chiong">
+                        <figcaption>Collin Chiong — Web Development Student</figcaption>
+                    </figure>
+
+                    <p>
+                        I am currently a student at Ontario Tech University, in the FBIT Faculty's Technology Management program.
+                    </p>
+
+                    <p>
+                        Outside of class, I like to enjoy playing games, binge watching shows, and recently, sleeping. 
+                        I aim to achieve many things during my degree here at Ontario Tech.
+                    </p>
+
+                    <section>
+                        <h3>My Introduction Video</h3>
+                        <video 
+                        id="video"
+                        controls
+                        width="480"
+                        height="270" 
+                        poster="media/Poster.png"
+                        preload="auto">
+                            <source src="media/Intro.mp4" type="video/mp4">
+                            Your browser does not support the HTML5 video tag.
+                            <a href="media/Intro.mp4">Download the video instead.</a>
+                        </video>
+                        <br>
+                        <button type="button" onclick="playpause()">Play / Pause</button>
+                    </section>
+                </article>
+            </main>
+            <footer id="contact">
+                <address>
+                    Contact: <a href="mailto:collin.chiong@ontariotechu.net">collin.chiong@ontariotechu.net</a>
+                </address>
+                <p>© 2026 by Collin Chiong. All rights reserved.</p>
+            </footer>
         </div>
+
     </body>
 </html>
-<script>
-
-</script>
