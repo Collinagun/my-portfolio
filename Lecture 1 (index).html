@@ -4,9 +4,16 @@
 <html>
     <head>
     <meta charset="UTF-8">
-    <title>HTML Lecture</title>
-    <!--Link files/links here-->
-    <link rel="stylesheet" type="text/css" href="index 1.css">>
+    <title>Projects</title>
+    <!--style sheet is for full-size monitor-->
+        <link href="full 3.css" rel="stylesheet" type="text/css" 
+        media="only screen and (min-width:960px)">
+        <!--style sheet is for tablet-->
+        <link href="tablet 3.css" rel="stylesheet" type="text/css"
+        media="only screen and (min-width:481px) and (max-width:959px)">
+        <!--style sheet is for smart phone-->
+        <link href="smartphone 3.css" rel="stylesheet" type="text/css"
+        media="only screen and (max-width:480px)">
     <!--Add fonts here from google fonts website-->
     </head>
     <body> 
@@ -20,12 +27,19 @@
         <p>Overtime we will learn HTML CSS, NODE, EXPRESS, ANGULAR, MONGODB</p>
         -->
         <div id="wrapper">
-            <div id="banner"> <!--id used to link to css-->
-                <!--Whatever in the boxes class is applied to all of them-->
-                <h1>
-                    Week 1
-                </h1>
-            </div>
+
+            <header id="banner">
+                <h1>Collin Chiong</h1>
+                <p class="subtitle">Student of FBIT Faculty - Web Developer</p>
+                <nav id="page-nav">
+                    <ul>
+                        <li><a href="Lecture 3 (Semantic).html">Home Page</a></li>
+                        <li><a href="Lecture 2 (Videos).html">About Me</a></li>
+                        <li><a href="Lecture 1 (index).html">Projects</a></li>
+                        <li><a href="Lecture 2 (feedback).html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
             <div id="left-column">
                 <h2>Left column heading here</h2> <!-- Add id to h# and class to column to add text colour-->
                 <h3>Links</h3>

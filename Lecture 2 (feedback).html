@@ -2,10 +2,34 @@
 <html>
     <head>
         <title>Feedback Form</title>
-        <link rel="stylesheet" type="text/css" href="full 3.css">
+        
+        <!--style sheet is for full-size monitor-->
+        <link href="full 3.css" rel="stylesheet" type="text/css" 
+        media="only screen and (min-width:960px)">
+        <!--style sheet is for tablet-->
+        <link href="tablet 3.css" rel="stylesheet" type="text/css"
+        media="only screen and (min-width:481px) and (max-width:959px)">
+        <!--style sheet is for smart phone-->
+        <link href="smartphone 3.css" rel="stylesheet" type="text/css"
+        media="only screen and (max-width:480px)">
+
     </head>
     <body>
         <div id="wrapper">
+
+            <header id="banner">
+                <h1>Collin Chiong</h1>
+                <p class="subtitle">Student of FBIT Faculty - Web Developer</p>
+                <nav id="page-nav">
+                    <ul>
+                        <li><a href="Lecture 3 (Semantic).html">Home Page</a></li>
+                        <li><a href="Lecture 2 (Videos).html">About Me</a></li>
+                        <li><a href="Lecture 1 (index).html">Projects</a></li>
+                        <li><a href="Lecture 2 (feedback).html">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
             <h1>Contact Me</h1>
             <form action="mailto:collin.chiong@ontariotechu.net?subject=Feedback on website"
             method="post" enctype="text/plain" name="Feedback_form">
