@@ -3,8 +3,16 @@
 <!--All page content is inside the HTML element-->
 <html>
     <head>
-    <meta charset="UTF-8">
-    <title>Projects</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Projects</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+
         <!--style sheet is for full-size monitor-->
         <link href="desktop.css" rel="stylesheet" type="text/css" 
         media="only screen and (min-width:960px)">
@@ -13,19 +21,11 @@
         media="only screen and (min-width:481px) and (max-width:959px)">
         <!--style sheet is for smart phone-->
         <link href="phone.css" rel="stylesheet" type="text/css"
-        media="only screen and (max-width:480px)">
-    <!--Add fonts here from google fonts website-->
+            media="only screen and (max-width:480px)">
+        <!--Add fonts here from google fonts website-->
     </head>
     <body> 
-        <!-- Set 1
-        <h1>Lecture1</h1>
-        <h2>Lecture1</h2>
-        <h3>Lecture1</h3>
-        <h4>Lecture1</h4>
-        <p>Description for lecture 1</p>
-        <p>Today is HTML</p>
-        <p>Overtime we will learn HTML CSS, NODE, EXPRESS, ANGULAR, MONGODB</p>
-        -->
+
         <div id="wrapper">
 
             <header id="banner">
@@ -40,39 +40,75 @@
                     </ul>
                 </nav>
             </header>
-            <div id="left-column">
-                <h2>Left column heading here</h2> <!-- Add id to h# and class to column to add text colour-->
-                <h3>Links</h3>
-                <ul> <!--ul = unordered list (periods list) & ol = ordered list (number list, forced to follow steps)-->
-                    <!--list items-->
-                
-                    <li><a href="http://www.imdb.com/">IMDB WebPage</a> </li>
-                    <li><a href="http://www.w3schools.com/">W3schools</a> </li>
-                
-                    <li><a href="Lecture4.html">Lecture-4</a> </li>
-                </ul>
-            </div>
-            <div id="right-column">
-                <h2>Right column heading here</h2> <!-- Add id to h# and class to column to add text colour-->
-                <p>right column content insert here</p>
-                <div class="box"><p>Box content</p></div>
-                <div class="box"><p>Box content</p></div>
-                <div class="box"><p>Box content</p></div>
-                <div class="box"><p>Box content</p></div>
-                <div class="box"><p>Box content</p></div>
-                <div class="box"><p>Box content</p></div>
-            </div>
-            <div class="clear"></div> <!--used for t-->
-            <div id="footer">
-                <h5>Site by Collin Chiong</h5>
-            </div>
-        </div>
 
-        <footer id="contact">
+            <main>
+                <article>
+                    <h2>My Projects</h2>
+
+                    <section class="subtitle-angled">
+                        <p>Projects I have worked on during my time at Ontario Tech</p>
+                    </section>
+
+                    <section class="project">
+                        <h3>1. Art Portfolio (Behance)</h3>
+                        <p>
+                            This is a culmination of all the digital art I did when I was in Game Development a few years back.
+                            Also has a few comic pages I created for term assessments.
+                        </p>
+                        <p>
+                            <a href="https://www.behance.net/collinchiong" target="_blank" rel="noopener">
+                                View the Art Portfolio
+                            </a>
+                        </p>
+                    </section>
+
+                    <section class="project">
+                        <h3>2. Rolling Ball</h3>
+                        <p>
+                            A simple game I made in Unity where you roll a ball to collect points.
+                            Has player movement, player detection, scoring system, etc.
+                        </p>
+                        <figure class="project-figure">
+                            <img src="media/ball_roll.png" alt="Screenshot of the Rolling Ball game">
+                            <figcaption>Rolling Ball Example</figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="project">
+                        <h3>3. Mechabogema</h3>
+                        <p>
+                            Platformer game I made in Unity with a good team for a final in Game Development.
+                            Has levels and gravity features.
+                        </p>
+                        <figure class="project-figure">
+                            <img src="media/mechabogema.png" alt="Screenshot of the title screen">
+                            <figcaption>Mechabogema Title Screen</figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="project">
+                        <h3>4. Junkyard Jumpers</h3>
+                        <p>
+                            Platformer game I made in Unity with a team for a midterm in Game Development.
+                            Despite internal differences, we delivered a working prototype with player movement and platform physics.
+                        </p>
+                        <figure class="project-figure">
+                            <img src="media/protag_jj.png" alt="Screenshot of the protagonist of Junkyard Jumpers">
+                            <figcaption>Render of the Protagonist</figcaption>
+                        </figure>
+                    </section>
+                    <aside>
+                        <p>More projects will appear as I progress through my degree.</p>
+                    </aside>
+                </article>
+            </main>
+
+            <footer id="contact">
                 <address>
                     Contact: <a href="mailto:collin.chiong@ontariotechu.net">collin.chiong@ontariotechu.net</a>
                 </address>
                 <p>© 2026 by Collin Chiong. All rights reserved.</p>
             </footer>
+        </div>
     </body>
 </html>
