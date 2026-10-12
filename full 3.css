@@ -138,7 +138,17 @@ figcaption
 
 h1,h2,h3,h4,h5,h6,p,li {
     margin: 15px;
-    color: #1FA65A;
+    color: #000000;
+}
+
+main h2 {
+    color: #8176D7;
+    border-bottom: 2px solid #D99437;
+    padding-bottom: 5px;
+}
+
+main h3 {
+    color: #23B7D9;
 }
 
 /* Angled (45°) linear gradient — required by rubric section 2b.
@@ -156,6 +166,40 @@ h1,h2,h3,h4,h5,h6,p,li {
     padding: 12px 18px;
     background-color: #F2E2CE;
     border-left: 5px solid #1FA65A;
+}
+
+/* Form elements on contact.html. */
+form label {
+    font-weight: bold;
+    color: #8176D7;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    padding: 8px;
+    border: 1px solid #23B7D9;
+    font-family: inherit;               /* keeps JetBrains Mono inside inputs */
+    font-size: 1em;
+    width: 90%;
+    max-width: 450px;
+}
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #D99437;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #7f85d5;
+    color: #F2E2CE;
 }
 
 .box
