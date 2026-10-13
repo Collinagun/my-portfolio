@@ -199,6 +199,7 @@ footer {
     padding: 15px 20px;
     text-align: center;
     clear: both;                        /* ensures it drops below any floated content */
+    color: #ffffff;
 }
 footer a {
     color: #ffffff;
