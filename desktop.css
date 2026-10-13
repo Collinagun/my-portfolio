@@ -133,7 +133,7 @@ figure.project-figure img {
     display: block;
 }
 figure.project-figure figcaption {
-    font-size: 0.85em;
+    font-size: 0.9em;
     background-color: #8176D7;
     color: #F2E2CE;
     padding: 4px 6px;
@@ -148,7 +148,7 @@ figure.project-figure figcaption {
 }
 
 /* Angled (45°) linear gradient — required by rubric section 2b.
-   Used on Project.html's "Project" Buttons. */
+   Used on Projects.html's Subtitle. */
 .subtitle-angled{
     padding: 30px 20px;
     margin: 20px 0;
