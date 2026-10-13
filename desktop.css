@@ -1,27 +1,25 @@
 @charset "UTF-8";
-/* Cascading Style Sheet*/
-/* CSS-3 */
-/* color combinations
- #D99437, #23B7D9, #1FA65A, #F2E2CE, #8176D7 */
+/* Cascading Style Sheet
+   Colour scheme (Adobe Color): #D99437, #23B7D9, #1FA65A, #F2E2CE, #8176D7
+   WCAG AA contrast variants: #8A5A1E (nav), #0F7A3E (hover),
+                              #10526B (h3), #4A3F94 (labels) */
 
- body{
-    font-family:JetBrains Mono, "Roboto", sans-serif;
+body {
+    font-family: 'JetBrains Mono', "Roboto", sans-serif;
     background-color: #F2E2CE;
-    color:#101010;
-    padding: 0px;
-    margin: 0px;
+    color: #101010;
+    padding: 0;
+    margin: 0;
 }
 
-#wrapper
-{
+#wrapper {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
-header,footer
-{
+header, footer {
     background-color: #8176D7;
     color: #F2E2CE;
     padding-top: 15px;
@@ -29,26 +27,25 @@ header,footer
     text-align: center;
 }
 
-#banner
-{
+#banner {
     padding: 25px 20px;
-    background: #8176D7;                    /* fallback for old browsers */
+    background: #8176D7;                                            /* fallback */
     background: linear-gradient(to bottom, #8176D7 0%, #23B7D9 100%);
 }
 
-#banner h1{
-    margin: 0px;
-    color: #F2E2CE;
+#banner h1 {
+    margin: 0;
+    color: #ffffff;
 }
 
-#banner .subtitle{
+#banner .subtitle {
     margin: 5px 0 0;
-    color: #F2E2CE;
+    color: #ffffff;
     font-style: italic;
 }
 
 #page-nav {
-    background-color: #D99437;
+    background-color: #8A5A1E;          /* darkened orange for WCAG AA contrast */
     overflow: hidden;                   /* clears the floated <li>s */
 }
 #page-nav ul {
@@ -66,13 +63,12 @@ header,footer
     text-decoration: none;
     transition: background 0.3s, color 0.3s;   /* smooth hover */
 }
-#page-nav a:hover, #page-nav a.active
-{
-    background-color: #1FA65A;
-    color: #F2E2CE;
+#page-nav a:hover, #page-nav a.active {
+    background-color: #0F7A3E;          /* darkened green for WCAG AA contrast */
+    color: #ffffff;
 }
 
-h1,h2,h3,h4,h5,h6,p,li {
+h1, h2, h3, h4, h5, h6, p, li {
     margin: 15px 0;
 }
 
@@ -83,11 +79,10 @@ main h2 {
 }
 
 main h3 {
-    color: #23B7D9;
+    color: #10526B;                     /* darkened teal for contrast */
 }
 
-aside
-{
+aside {
     background-color: #F2E2CE;
     float: right;
     width: 300px;
@@ -107,15 +102,13 @@ figure.profile {
     width: 300px;
     margin: 0 20px 15px 0;
 }
-figure img
-{
+figure img {
     width: 100%;
     display: block;
 }
-figcaption
-{
-    background-color: #8176D7;          /* deep accent instead of pure black */
-    color: #F2E2CE;
+figcaption {
+    background-color: #8176D7;
+    color: #ffffff;
     padding: 6px 8px;
     text-align: center;
 }
@@ -133,9 +126,9 @@ figure.project-figure img {
     display: block;
 }
 figure.project-figure figcaption {
-    font-size: 0.9em;
+    font-size: 1em;
     background-color: #8176D7;
-    color: #F2E2CE;
+    color: #ffffff;
     padding: 4px 6px;
     text-align: center;
 }
@@ -149,17 +142,16 @@ figure.project-figure figcaption {
 
 /* Angled (45°) linear gradient — required by rubric section 2b.
    Used on the "Projects" intro section in Projects.html. */
-.subtitle-angled{
+.subtitle-angled {
     padding: 30px 20px;
     margin: 20px 0;
-    color: #F2E2CE;
-    background: #D99437;
+    color: #ffffff;
+    background: #D99437;                                            /* fallback */
     background: linear-gradient(45deg, #D99437 0%, #8176D7 100%); /* angled */
     border-radius: 8px;
 }
 
-video
-{
+video {
     margin: 15px 0;
     padding: 8px;
     background-color: #222222;
@@ -171,11 +163,12 @@ video
 /* Form elements on contact.html. */
 form label {
     font-weight: bold;
-    color: #8176D7;
+    color: #4A3F94;                     /* darkened purple for contrast */
 }
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
+form input[type="number"],
 form textarea {
     padding: 8px;
     border: 1px solid #23B7D9;
@@ -198,8 +191,8 @@ form input[type="reset"] {
 }
 form input[type="submit"]:hover,
 form input[type="reset"]:hover {
-    background-color: #1FA65A;
-    color: #F2E2CE;
+    background-color: #0F7A3E;
+    color: #ffffff;
 }
 
 footer {
@@ -208,7 +201,8 @@ footer {
     clear: both;                        /* ensures it drops below any floated content */
 }
 footer a {
-    color: #D99437;
+    color: #ffffff;
+    text-decoration: underline;
 }
 footer address {
     font-style: normal;                 /* browsers italicise <address> by default */
