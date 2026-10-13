@@ -24,7 +24,7 @@ body {
 
 header, footer {
     background-color: #8176D7;
-    color: #F2E2CE;
+    color: #ffffff;
     padding-top: 15px;
     padding-bottom: 20px;
     text-align: center;
@@ -78,7 +78,7 @@ header, footer {
     transition: background 0.3s, color 0.3s;   /* smooth hover */
 }
 #page-nav a:hover, #page-nav a.active {
-    background-color: #0F7A3E;          /* darkened green for WCAG AA contrast */
+    background-color: #0A5C2F;          /* darkened green for WCAG AA contrast */
     color: #ffffff;
 }
 
@@ -222,7 +222,7 @@ form input[type="reset"] {
 }
 form input[type="submit"]:hover,
 form input[type="reset"]:hover {
-    background-color: #0F7A3E;
+    background-color: #0A5C2F;
     color: #ffffff;
 }
 

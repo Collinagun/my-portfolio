@@ -63,12 +63,28 @@ Location: .subtitle-angled section on Projects.html.
 background: #D99437;                                            /* fallback */
 background: linear-gradient(45deg, #D99437 0%, #8176D7 100%);
 
+
+
 ## Testing
 - W3C HTML validation: Good
 - W3C CSS validation: Good
 - W3C Link Checker: Only has mailto as issue (apparently not allowed to access b/c its email)
 - Spell check: Code Spell Checker extension for VS code
 - WAVE accessibility: WIP
+
+
+
+## Semantic HTML5
+
+The site uses HTML5 semantic tags throughout:
+
+- `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>` — page structure
+- `<figure>` and `<figcaption>` — images with captions (profile photo, project screenshots)
+- `<address>` — contact email in the footer
+- `<mark>` — used in the aside element
+- `<video>` with `controls`, `poster`, `preload` — embedded intro video
+
+
 
 Citations
 
