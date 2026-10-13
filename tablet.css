@@ -238,4 +238,5 @@ footer a {
 footer address {
     font-style: normal;                 /* browsers italicise <address> by default */
     margin-bottom: 5px;
+    color: #ffffff;
 }

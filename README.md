@@ -43,9 +43,10 @@ Adobe Colour Scheme
 
 WCAG Contract Variants
 #D99437	#8A5A1E	Nav bar background (white text on it)
-#1FA65A	#0F7A3E	Hover/active nav, form button hover
+#1FA65A	#0A5C2F	Hover/active nav, form button hover
 #23B7D9	#10526B	main h3 section headings on cream background
 #8176D7	#4A3F94	Form labels on white background
+#F2E2CE    #ffffff    Footer text
 
 
 
