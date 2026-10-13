@@ -57,7 +57,7 @@ header,footer
    nav links split the row evenly. Better for touch targets —
    fingers can't aim as precisely as a mouse cursor. */
 #page-nav {
-    background-color: #e29c40;
+    background-color: #D99437;
     overflow: hidden;                   /* clears the floated <li>s */
 }
 #page-nav ul {
@@ -81,7 +81,7 @@ header,footer
 }
 #page-nav a:hover, #page-nav a.active
 {
-    background-color: #7f85d5;
+    background-color: #1FA65A;
     color: #F2E2CE;
 }
 
@@ -136,7 +136,7 @@ figure img
 }
 figcaption
 {
-    background-color: #7067ba;          /* deep accent instead of pure black */
+    background-color: #8176D7;          /* deep accent instead of pure black */
     color: #F2E2CE;
     padding: 6px 8px;
     text-align: center;
@@ -171,7 +171,7 @@ figure.project-figure figcaption {
 }
 
 /* Angled (45°) linear gradient — required by rubric section 2b.
-   Used on Projects.html's Subtitle. */
+   Used on the "Projects" intro section in Projects.html. */
 .subtitle-angled{
     padding: 20px 15px;
     margin: 15px 0;
@@ -228,7 +228,7 @@ form input[type="reset"] {
 }
 form input[type="submit"]:hover,
 form input[type="reset"]:hover {
-    background-color: #7f85d5;
+    background-color: #1FA65A;
     color: #F2E2CE;
 }
 
