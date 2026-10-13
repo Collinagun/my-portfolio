@@ -93,7 +93,7 @@ The site uses HTML5 semantic tags throughout:
 W3Schools. “HTML Input Type=’Email.’” Www.W3schools.Com, https://www.w3schools.com/tags/att_input_type_email.asp. Accessed 12 Oct. 2026.
 “JetBrains Mono - Google Fonts.” Google Fonts, 2025, https://fonts.google.com/specimen/JetBrains+Mono. Accessed 12 Oct. 2026.
 
-
+Most if not all code is from the lectures.
 
 
 
