@@ -22,9 +22,9 @@ The site uses three separate CSS files, each loaded via an HTML `<link>` element
 
 | Stylesheet | Media Query | Why this breakpoint |
 |---|---|---|
-| `desktop.css` | `min-width: 960px` | Laptop/desktop. Uses a fixed 960px wrapper (standard 960 grid), centred with `margin: auto`. The 960px width is easily divisible by 2, 3, 4, and 6 — allowing for clean column layouts.
-| `tablet.css` | `481px – 959px` | Tablet. Switches to a fluid 100% wrapper so layout fills the screen. Nav items become evenly spaced (25% each) for easier tapping. Floating elements (aside, figures) stack vertically instead of squeezing content.
-| `phone.css` | `max-width: 480px` | Smartphone. Nav becomes a vertical stack (one link per row) for larger tap targets. Form inputs and buttons stretch to 100% width. Submit and Reset buttons stack vertically.
+| `desktop.css` | `min-width: 960px` | Laptop/desktop. Uses a fixed 960px wrapper (standard 960 grid), centred with `margin: auto`. The 960px width is easily divisible by 2, 3, 4, and 6 — allowing for clean column layouts. | 
+| `tablet.css` | `481px – 959px` | Tablet. Switches to a fluid 100% wrapper so layout fills the screen. Nav items become evenly spaced (25% each) for easier tapping. Floating elements (aside, figures) stack vertically instead of squeezing content. | 
+| `phone.css` | `max-width: 480px` | Smartphone. Nav becomes a vertical stack (one link per row) for larger tap targets. Form inputs and buttons stretch to 100% width. Submit and Reset buttons stack vertically. | 
 
 Every page includes:
 
@@ -41,7 +41,7 @@ Adobe Colour Scheme
 #F2E2CE	Cream — page background, cards, aside background
 #8176D7	Purple — banner, header/footer, figcaption backgrounds
 
-WCAG Contract Variants
+WCAG Contrast Variants
 #D99437	#8A5A1E	Nav bar background (white text on it)
 #1FA65A	#0A5C2F	Hover/active nav, form button hover
 #23B7D9	#10526B	main h3 section headings on cream background
@@ -67,11 +67,11 @@ background: linear-gradient(45deg, #D99437 0%, #8176D7 100%);
 
 
 ## Testing
-- W3C HTML validation: Good
-- W3C CSS validation: Good
-- W3C Link Checker: Only has mailto as issue (apparently not allowed to access b/c its email)
+- W3C HTML validation: Zero errors
+- W3C CSS validation: Zero errors
+- W3C Link Checker: 1 url invalid cannot reach
 - Spell check: Code Spell Checker extension for VS code
-- WAVE accessibility: WIP
+- WAVE accessibility: Minor Issues (footer text issues constantly)
 
 
 
@@ -87,7 +87,7 @@ The site uses HTML5 semantic tags throughout:
 
 
 
-Citations
+## Citations
 
 “HTML Input Type=’Tel.’” Www.W3schools.Com, https://www.w3schools.com/tags/att_input_type_tel.asp. Accessed 12 Oct. 2026.
 W3Schools. “HTML Input Type=’Email.’” Www.W3schools.Com, https://www.w3schools.com/tags/att_input_type_email.asp. Accessed 12 Oct. 2026.

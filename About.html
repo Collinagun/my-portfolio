@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- 
+    Key features: <figure> with profile photo, <video> with poster + controls
+    Layout: profile photo floats left on desktop, stacks above text on tablet/phone
+-->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -10,13 +14,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-        <!--style sheet is for full-size monitor-->
         <link href="desktop.css" rel="stylesheet" type="text/css" 
         media="only screen and (min-width:960px)">
-        <!--style sheet is for tablet-->
         <link href="tablet.css" rel="stylesheet" type="text/css"
         media="only screen and (min-width:481px) and (max-width:959px)">
-        <!--style sheet is for smart phone-->
         <link href="phone.css" rel="stylesheet" type="text/css"
         media="only screen and (max-width:480px)">
     </head>
@@ -40,7 +41,11 @@
                 <article>
                     <h2>Hi, I'm Collin Chiong.</h2>
 
-                    <!-- Profile photo — styled by figure.profile in desktop.css -->
+                    <!-- FIGURE + FIGCAPTION: HTML5 semantic pairing for an image with a caption.
+                         class="profile" triggers figure.profile in CSS:
+                           - desktop: floats left, 300px wide
+                           - tablet:  float: none, 80% width, centred
+                           - phone:   float: none, 100% width -->
                     <figure class="profile">
                         <img src="media/Profile_picture.jpg" alt="Profile Photograph of Collin Chiong">
                         <figcaption>Collin Chiong — Web Development Student</figcaption>
@@ -55,8 +60,16 @@
                         I aim to achieve many things during my degree here at Ontario Tech.
                     </p>
 
+                    <!-- SECTION: subtopic of the article (the video is a subsection of "About Me") -->
                     <section>
                         <h3>My Introduction Video</h3>
+                        <!-- HTML5 native video:
+                             - controls = browser play/pause/volume UI
+                             - poster   = image shown before playback begins
+                             - preload  = start loading metadata (duration, first frame)
+                             - <source> = MP4 (h.264) is the only source needed;
+                               MP4 is universally supported, so no OGG fallback required.
+                             Fallback text appears in browsers that don't support <video>. -->
                         <video 
                         id="video"
                         controls

@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- 
+    - .subtitle-angled section = angled 45° linear gradient (rubric 2b)
+    - 4 <section class="project"> blocks, each with <h3> heading + description
+    - <figure class="project-figure"> for project screenshots
+    - External link to Behance (target="_blank" rel="noopener" for security)
+-->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -11,16 +17,12 @@
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 
-        <!--style sheet is for full-size monitor-->
         <link href="desktop.css" rel="stylesheet" type="text/css" 
         media="only screen and (min-width:960px)">
-        <!--style sheet is for tablet-->
         <link href="tablet.css" rel="stylesheet" type="text/css"
         media="only screen and (min-width:481px) and (max-width:959px)">
-        <!--style sheet is for smart phone-->
         <link href="phone.css" rel="stylesheet" type="text/css"
             media="only screen and (max-width:480px)">
-        <!--Add fonts here from google fonts website-->
     </head>
     <body> 
 
@@ -43,11 +45,16 @@
                 <article>
                     <h2>My Projects</h2>
 
+                    <!-- .subtitle-angled = angled (45deg) linear gradient.
+                         Has BOTH a fallback solid colour (#D99437) and the gradient —
+                         that's the "graceful degradation" pattern for older browsers. -->
                     <section class="subtitle-angled">
                         <h3>Projects</h3>
                         <p>I have worked on during my time at Ontario Tech</p>
                     </section>
 
+                    <!-- Each project is a <section class="project"> — CSS gives it
+                         a cream background and green left border to look like a card. -->
                     <section class="project">
                         <h3>1. Art Portfolio (Behance)</h3>
                         <p>
@@ -55,6 +62,8 @@
                             Also has a few comic pages I created for term assessments.
                         </p>
                         <p>
+                            <!-- External link: target="_blank" opens in new tab,
+                                 rel="noopener" prevents the new page from accessing our page's JS context (security). -->
                             <a href="https://www.behance.net/collinchiong" target="_blank" rel="noopener">
                                 View the Art Portfolio
                             </a>
@@ -67,6 +76,8 @@
                             A simple game I made in Unity where you roll a ball to collect points.
                             Has player movement, player detection, scoring system, etc.
                         </p>
+                        <!-- Project screenshot with figcaption. class="project-figure"
+                             gives it a smaller width on desktop (240px) and larger on tablet (60%)/phone (100%). -->
                         <figure class="project-figure">
                             <img src="media/ball_roll.png" alt="Screenshot of the Rolling Ball game">
                             <figcaption>Rolling Ball Example</figcaption>
@@ -96,6 +107,9 @@
                             <figcaption>Render of the Protagonist</figcaption>
                         </figure>
                     </section>
+
+                    <!-- ASIDE = sidebar-ish supplementary note. On desktop it floats right;
+                         on tablet/phone it stacks below the projects. -->
                     <aside>
                         <p>More projects will appear as I progress through my degree.</p>
                     </aside>

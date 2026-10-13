@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!-- 
+    Validation features:
+      - required        : cannot submit blank
+      - type="email"    : browser checks for valid email format (must contain @)
+      - type="tel" + pattern : enforces 123-456-7890 format via regex
+      - <fieldset>/<legend>  : groups radio buttons for screen readers (WAVE-friendly)
+    Submit action: mailto: opens user's email client with form data pre-filled
+-->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -10,13 +18,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-        <!--style sheet is for full-size monitor-->
         <link href="desktop.css" rel="stylesheet" type="text/css" 
         media="only screen and (min-width:960px)">
-        <!--style sheet is for tablet-->
         <link href="tablet.css" rel="stylesheet" type="text/css"
         media="only screen and (min-width:481px) and (max-width:959px)">
-        <!--style sheet is for smart phone-->
         <link href="phone.css" rel="stylesheet" type="text/css"
         media="only screen and (max-width:480px)">
 
@@ -40,9 +45,16 @@
             <main>
                 <article>
                     <h2>Contact Me</h2>
+
+                    <!-- mailto: action = on submit, opens user's email client with the form data.
+                         method="post" + enctype="text/plain" tells browser to format form fields as plain text.
+                         Using "Feedback" (no space) avoids URL-encoding issues W3C flags with spaces. -->
                     <form action="mailto:collin.chiong@ontariotechu.net?subject=Feedback"
                     method="post" enctype="text/plain" name="Feedback_form">
+
                         <p>
+                            <!-- label for="fname" must MATCH the input id="fname" for accessibility.
+                                 required = cannot submit blank. -->
                             <label for="fname">First Name:</label>
                             <input type="text" id="fname" name="fname" size="32" placeholder="ex. Adam" required>
                         </p>
@@ -51,21 +63,28 @@
                             <input type="text" id="lname" name="lname" size="32" placeholder="ex. Sandler" required>
                         </p>
                         <p>
+                            <!-- type="email" triggers browser's built-in email validation
+                                 (rejects values without an @ symbol). -->
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" size="40" placeholder="ex. adam.sandler@gmail.com" required>
                         </p>
                         <p>
+                            <!-- type="tel" is the semantic tag for phone numbers.
+                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" enforces 123-456-7890 format via regex. -->
                             <label for="phone">Phone Number:</label>
                             <input type="tel" id="phone" name="phone" size="40" placeholder="123-421-4002"
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </p>
                         <p>
+                            <!-- <textarea> for multi-line input (comments can be long).
+                                 cols/rows control visible size; no maxlength so unlimited length. -->
                             <label for="comments">Comments:</label><br>
                             <textarea id="comments" name="comments" cols="60" rows="6"
                                     placeholder="Question, comment, or query..."></textarea>
                         </p>
 
                         <p>
+                            <!-- <select> renders a dropdown. id="where" matches label for="where". -->
                             <label for="where">How did you find me?</label>
                             <select name="where" id="where">
                                 <option value="Search engine">Search Engine</option>
@@ -74,6 +93,9 @@
                                 <option value="Other">Other</option>
                                 </select>
                         </p>
+                            <!-- FIELDSET + LEGEND = the accessible way to group radio buttons.
+                                 WAVE specifically checks for this pattern. <legend> becomes the group's
+                                 visible label; each radio still has its own <label for="..."> for Yes/No. -->
                             <fieldset>
                                 <legend>Did you like my webpage?</legend>
                                 <input type="radio" id="Yradio" name="rating" value="Yes">
@@ -81,6 +103,7 @@
                                 <input type="radio" id="Nradio" name="rating" value="No">
                                 <label for="Nradio">No</label>
                             </fieldset>
+                        <!-- Reset clears all inputs; Submit triggers the mailto: action. -->
                         <input type="reset" value="Reset">
                         <input type="submit" value="Submit">
                     </form>

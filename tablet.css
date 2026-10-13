@@ -5,6 +5,16 @@
                               #10526B (h3), #4A3F94 (labels)
    Purpose: Tablet stylesheet (viewport: 481px – 959px) */
 
+   /*
+   TABLET.CSS — viewport: 481px to 959px
+   
+   Layout strategy: fluid 100% wrapper, no fixed heights.
+   Nav: 4 items at 25% width each (equal tap targets).
+   Figures: no float, 80% width, centred.
+   Aside: stacks below main content instead of floating beside it.
+   Loaded only within the 481-959px range; desktop/phone use their own files.
+   */
+
 body {
     font-family: 'JetBrains Mono', "Roboto", sans-serif;
     background-color: #F2E2CE;

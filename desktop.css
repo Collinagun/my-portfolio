@@ -3,6 +3,16 @@
    Colour scheme (Adobe Color): #D99437, #23B7D9, #1FA65A, #F2E2CE, #8176D7
    WCAG AA contrast variants: #8A5A1E (nav), #0F7A3E (hover),
                               #10526B (h3), #4A3F94 (labels) */
+    
+    /*
+   DESKTOP.CSS — viewport: 960px and wider
+   
+   Layout strategy: fixed 960px wrapper (standard 960 grid).
+   Nav: horizontal bar with content-sized items.
+   Figures: floated beside text (aside floats right, profile floats left).
+   Loaded only when browser width is 960px+. Tablet and phone get their
+   own separate stylesheets via media queries in each HTML file.
+   */
 
 body {
     font-family: 'JetBrains Mono', "Roboto", sans-serif;

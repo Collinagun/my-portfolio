@@ -5,6 +5,15 @@
                               #10526B (h3), #4A3F94 (labels)
    Purpose: Phone stylesheet (viewport: max-width 480px) */
 
+    /*
+   PHONE.CSS — viewport: 480px and narrower
+   
+   Layout strategy: fluid 100% wrapper, single column.
+   Nav: stacked vertically — one full-width row per link (largest tap targets).
+   Figures: full width. Form inputs: full width. Buttons stack vertically.
+   Loaded only when browser width is 480px or less.
+   */
+
 body {
     font-family: 'JetBrains Mono', "Roboto", sans-serif;
     background-color: #F2E2CE;

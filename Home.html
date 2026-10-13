@@ -1,33 +1,51 @@
 <!DOCTYPE html>
+<!-- 
+    Structure: header (banner + nav) → main (article + aside) → footer
+    Uses: semantic HTML5 tags, shared CSS via 3 media-query-linked stylesheets
+-->
 <html lang="en">
     <head>
+        <!-- UTF-8 ensures © and other special chars render correctly -->
         <meta charset="UTF-8">
+        <!-- Viewport meta forces mobile browsers to report true device width,
+             so the tablet.css / phone.css media queries actually trigger -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>Home Page</title>
 
+        <!-- Google Fonts: JetBrains Mono (used in all CSS as the primary font) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
             
-        <!--style sheet is for full-size monitor-->
+        <!-- Responsive stylesheets — one per viewport (Week 3 technique).
+             The browser loads ONLY the matching one, so each file must be self-contained. -->
+        <!-- style sheet for full-size monitor (960px and wider) -->
         <link href="desktop.css" rel="stylesheet" type="text/css" 
         media="only screen and (min-width:960px)">
-        <!--style sheet is for tablet-->
+        <!-- style sheet for tablet (481px to 959px) -->
         <link href="tablet.css" rel="stylesheet" type="text/css"
         media="only screen and (min-width:481px) and (max-width:959px)">
-        <!--style sheet is for smart phone-->
+        <!-- style sheet for smartphone (480px and narrower) -->
         <link href="phone.css" rel="stylesheet" type="text/css"
         media="only screen and (max-width:480px)">
     </head>
     <body>
+        <!-- #wrapper is the fixed 960px container on desktop,
+             and expands to 100% on tablet/phone via overrides in those CSS files. -->
         <div id="wrapper">
 
+            <!-- SEMANTIC HEADER: contains the site name + main nav.
+                 #banner gives it the purple→teal gradient background. -->
             <header id="banner">
                 <h1>Collin Chiong</h1>
                 <p class="subtitle">Student of FBIT Faculty - Web Developer</p>
+                
+                <!-- SEMANTIC NAV: uses #page-nav so CSS can target it distinctly
+                     from any other <nav> on the page (e.g. footer nav). -->
                 <nav id="page-nav">
                     <ul>
+                        <!-- class="active" highlights the current page via CSS -->
                         <li><a href="Home.html" class="active">Home Page</a></li>
                         <li><a href="About.html">About Me</a></li>
                         <li><a href="Projects.html">Projects</a></li>
@@ -36,22 +54,26 @@
                 </nav>
             </header>
 
+            <!-- MAIN wraps the primary content of the page.
+                 ARTICLE wraps a self-contained composition (the welcome message + tip). -->
             <main>
                 <article>
-                    
                     <h2>Welcome to my Portfolio!</h2>
                     <p>
                         I am a student in the FBIT Faculty at Ontario Tech University.
                         This site will provide you with an introduction to myself, my previous projects, and a way to contact me.
                     </p>
                     
+                    <!-- ASIDE = tangential/supplementary content (a tip to the user). -->
                     <aside>
                         <p>Use the navigation above to explore each page.</p>
                     </aside>
-
                 </article>
             </main>
 
+            <!-- SEMANTIC FOOTER: contains contact info + copyright.
+                 <address> is the HTML5 tag specifically for contact details.
+                 Text colour set to white in CSS to pass WCAG AA contrast on purple background. -->
             <footer id="contact">
                 <address>
                     Contact: <a href="mailto:collin.chiong@ontariotechu.net">collin.chiong@ontariotechu.net</a>
